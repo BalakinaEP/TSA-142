@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    float a, n, b, area, perimeter;
+    
+    // Гараас өгөгдөл авах
+    printf("a талын уртыг оруулна уу: ");
+    scanf("%f", &a);
+    
+    printf("n коэффициентийг оруулна уу (жишээ нь, 50% бол 0.5): ");
+    scanf("%f", &n);
+    
+    // b талын уртыг тооцоолох
+    b = n * a;
+    
+    // Талбай ба периметрийг тооцоолох
+    area = a * b;
+    perimeter = 2 * (a + b);
+    
+    // Үр дүнг хэвлэх
+    printf("\nТооцооллын үр дүн:\n");
+    printf("a тал = %.2f\n", a);
+    printf("b тал = %.2f\n", b);
+    printf("Талбай = %.2f\n", area);
+    printf("Периметр = %.2f\n", perimeter);
+    
+    return 0;
+}
